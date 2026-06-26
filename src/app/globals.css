@@ -1,30 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --color-primary-deep: #331a44;
-  --color-primary-light: #52316a;
-  --color-accent-gold: #dca11d;
-  --color-accent-hover: #e5b33a;
-  --color-charcoal: #1e2229;
-  --color-light-bg: #f4f6f8;
-  --color-tech-blue: #1d6ecb;
-  --color-tech-dark: #0f172a;
-  
-  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Inter', monospace;
+:root {
+  --dfs-royal-purple: #4B1678;
+  --dfs-deep-purple: #2B0B45;
+  --dfs-purple-black: #170622;
+  --dfs-purple-light: #F4EEFA;
+  --dfs-purple-muted: #E5D8F1;
+
+  --dfs-gold: #D9A520;
+  --dfs-bright-gold: #F0C75E;
+  --dfs-deep-gold: #A97308;
+  --dfs-soft-gold: #FFF7DC;
+  --dfs-metallic-gold: #C79222;
+
+  --dfs-charcoal: #181A1F;
+  --dfs-slate: #404650;
+  --dfs-grey: #68707D;
+  --dfs-light-grey: #F5F6F8;
+  --dfs-border: #E3E5E8;
+
+  --dfs-white: #FFFFFF;
+  --dfs-black: #0A0B0D;
+
+  --dfs-tech-blue: #21A7C7;
+  --dfs-success: #16845B;
+  --dfs-warning: #D88A14;
+  --dfs-danger: #C84141;
+  --dfs-info: #277FA5;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #1e2229;
+@theme {
+  --color-primary-royal: var(--dfs-royal-purple);
+  --color-primary-deep: var(--dfs-deep-purple);
+  --color-primary-black: var(--dfs-purple-black);
+  --color-primary-light: var(--dfs-purple-light);
+  --color-primary-muted: var(--dfs-purple-muted);
+  
+  --color-accent-gold: var(--dfs-gold);
+  --color-accent-bright: var(--dfs-bright-gold);
+  --color-accent-deep: var(--dfs-deep-gold);
+  --color-accent-soft: var(--dfs-soft-gold);
+  --color-accent-metallic: var(--dfs-metallic-gold);
+  
+  --color-charcoal: var(--dfs-charcoal);
+  --color-slate: var(--dfs-slate);
+  --color-grey: var(--dfs-grey);
+  --color-light-grey: var(--dfs-light-grey);
+  --color-border-dfs: var(--dfs-border);
+  
+  --color-tech-blue: var(--dfs-tech-blue);
+  --color-success-dfs: var(--dfs-success);
+  --color-warning-dfs: var(--dfs-warning);
+  --color-danger-dfs: var(--dfs-danger);
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Manrope', 'Sora', sans-serif;
+  --font-display: 'Sora', 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--dfs-white);
+  color: var(--dfs-charcoal);
   font-family: var(--font-sans);
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Premium Gold Gradient Class */
+.gold-gradient {
+  background: linear-gradient(
+    135deg,
+    #A97308 0%,
+    #D9A520 45%,
+    #F0C75E 75%,
+    #C79222 100%
+  );
 }
 
 /* Custom Scrollbar */
@@ -32,21 +86,21 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f4f6f8;
+  background: var(--dfs-light-grey);
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: var(--dfs-grey);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: var(--dfs-slate);
 }
 
-/* Restrained animations classes */
+/* Restrained animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -55,15 +109,25 @@ body {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.delay-100 {
-  animation-delay: 0.1s;
+.delay-75 {
+  animation-delay: 75ms;
 }
-.delay-200 {
-  animation-delay: 0.2s;
+.delay-150 {
+  animation-delay: 150ms;
 }
 .delay-300 {
-  animation-delay: 0.3s;
+  animation-delay: 300ms;
+}
+
+/* Card hover scaling and transitions */
+.card-hover-transition {
+  transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-transition:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(23, 6, 34, 0.11);
 }
