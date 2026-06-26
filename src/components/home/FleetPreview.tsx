@@ -185,7 +185,7 @@ export default function FleetPreview() {
         {/* Featured Fleet Banner Graphic */}
         <div className="mt-12 relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-96 shadow-xl group border border-border-dfs">
           <Image
-            src="/images/dfs-fleet-lineup.png"
+            src="/images/dfs-fleet-lineup.jpg"
             alt="DFS Group Volvo and Scania regional logistics fleet parked in Gaborone."
             fill
             className="object-cover"

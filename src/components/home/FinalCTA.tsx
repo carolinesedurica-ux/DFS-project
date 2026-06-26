@@ -9,7 +9,7 @@ export default function FinalCTA() {
       {/* Background Image with Deep Purple Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/dfs-home-hero-fleet.png"
+          src="/images/dfs-home-hero-fleet.jpg"
           alt="DFS Group logistics truck on a SADC regional corridor."
           fill
           className="object-cover"

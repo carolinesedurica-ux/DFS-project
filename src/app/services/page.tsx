@@ -16,11 +16,11 @@ export default function Services() {
       case "bagged-cargo":
         return "/images/dfs-bagged-cargo-flatdeck.png";
       case "cross-border-freight":
-        return "/images/dfs-cross-border-road-freight.png";
+        return "/images/dfs-cross-border-road-freight.jpg";
       case "customs-clearing":
         return "/images/dfs-customs-support.png";
       default:
-        return "/images/dfs-fleet-lineup.png";
+        return "/images/dfs-fleet-lineup.jpg";
     }
   };
 

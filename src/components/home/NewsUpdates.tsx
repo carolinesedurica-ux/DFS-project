@@ -21,7 +21,7 @@ export default function NewsUpdates() {
       case "safety & hseqe":
         return "/images/dfs-driver-safety.png";
       default:
-        return "/images/dfs-cross-border-road-freight.png";
+        return "/images/dfs-cross-border-road-freight.jpg";
     }
   };
 

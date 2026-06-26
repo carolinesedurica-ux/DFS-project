@@ -43,7 +43,7 @@ export default function ServiceShowcase() {
       id: "cross-border-freight",
       title: "Cross-Border Logistics",
       tagline: "Corridor Expertise and Seamless Border Clearing",
-      image: "/images/dfs-cross-border-road-freight.png",
+      image: "/images/dfs-cross-border-road-freight.jpg",
       alt: "DFS Group freight trucks passing border checkpoint at Martins Drift.",
       description:
         "Cross-border shipping is simplified by our direct corridor control and dedicated teams. We coordinate clearing at all major border crossings to keep your supply chain running without delays.",
