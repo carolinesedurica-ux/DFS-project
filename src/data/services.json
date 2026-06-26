@@ -1,0 +1,77 @@
+[
+  {
+    "id": "bulk-cargo",
+    "title": "Bulk Cargo Transport",
+    "shortDescription": "High-capacity local and cross-border transport of minerals, aggregates, and agricultural commodities.",
+    "longDescription": "DFS Group provides reliable and efficient transport for high-volume bulk commodities across Southern Africa. Operating a modern fleet of side-tippers, we support mining operations, industrial processes, and agricultural distribution with optimized payload capacities and strict safety compliance.",
+    "features": [
+      "22.5 m³ side-tippers optimized for dense ores and aggregates",
+      "45 m³ high-capacity side-tippers for coal, agricultural bulk, and low-density minerals",
+      "Robust route planning minimizing delays on key Southern African transit corridors",
+      "On-board load-weighing systems to ensure compliance with axle load limits",
+      "Continuous fleet tracking for real-time cargo visibility"
+    ],
+    "cargoExamples": ["Coal", "Chrome ore", "Manganese", "Copper concentrates", "Industrial sand & aggregates", "Bulk grain & fertilizer"],
+    "safetyPractices": "All bulk trailers are fitted with automatic tarping systems to secure loads and prevent dust emissions. Drivers undergo regular defensive driving training and route hazards profiling before deployment."
+  },
+  {
+    "id": "bagged-cargo",
+    "title": "Bagged Cargo Transport",
+    "shortDescription": "Secure, long-distance transportation of palletized and bagged materials using flat-deck links.",
+    "longDescription": "Our bagged cargo service delivers high-capacity transit for palletized and stacked commodities. Utilizing Scania flat-deck link combinations, we move materials safely between manufacturing plants, regional distributors, and final delivery sites across borders.",
+    "features": [
+      "Flat-deck link combinations with carrying capacities of up to 36 metric tonnes",
+      "Heavy-duty weather-proof cargo covers and specialized lashing straps",
+      "Strict cargo securement verification protocols at origin and major check stations",
+      "Cost-effective freight rates for long-haul corridor lanes",
+      "Frequent transit milestone updates transmitted directly to your operational contact"
+    ],
+    "cargoExamples": ["Bagged cement", "Agricultural fertilizer bags", "Building materials & steel structures", "Timber & wood products", "Palletized fast-moving consumer goods (FMCG)"],
+    "safetyPractices": "All flat-deck loads are secured under strict compliance with regional load-restraint guidelines. Cargo strap tension is monitored during routine driver stops."
+  },
+  {
+    "id": "cross-border-freight",
+    "title": "Cross-Border Logistics",
+    "shortDescription": "Seamless corridor coordination and freight transit between Botswana, SA, Zambia, and Zimbabwe.",
+    "longDescription": "Navigating cross-border trade in Southern Africa requires experience, robust route networks, and continuous coordination. DFS Group links the major economic hubs of Gaborone, Johannesburg, Lusaka, and Harare, providing a dependable bridge for regional supply chains.",
+    "features": [
+      "Dedicated border coordination teams at Ramokgwebana, Martins Drift, Kazungula, and Beitbridge",
+      "Active documentation pre-clearance checks to minimize border dwell times",
+      "Multi-point status updates across regional check stations",
+      "Pre-planned routes avoiding high-risk corridors",
+      "Ready architecture for future digital waybills and document storage on DFS-OS"
+    ],
+    "corridors": ["Botswana – South Africa (Martins Drift / Tlokweng)", "Botswana – Zimbabwe (Ramokgwebana)", "Botswana – Zambia (Kazungula)", "South Africa – Zimbabwe – Zambia (Beitbridge Corridor)"],
+    "safetyPractices": "All cross-border units maintain active dual-satellite/cellular tracking to ensure continuous tracking even in remote border locations."
+  },
+  {
+    "id": "customs-clearing",
+    "title": "Customs Clearing Support",
+    "shortDescription": "Regulatory guidance and document pre-clearance coordination for import and export goods.",
+    "longDescription": "Keep your cargo moving without administrative delays. DFS Group supports your business by coordinating all import/export customs clearance requirements, ensuring compliance with local revenue authorities and regional border systems.",
+    "features": [
+      "Customs documentation compilation, check, and pre-filing services",
+      "Direct coordination with custom brokers and border agents at major crossings",
+      "Assistance with customs valuation, tariff classification (HS codes), and origin rules",
+      "Active monitoring of border processing queues and clear communication of release statuses",
+      "Preparation for automated customs filing tools in our future DFS-OS system"
+    ],
+    "disclaimer": "Disclaimer: DFS Group acts as an advisory and administrative partner for customs documentation. Customers remain legally responsible for supplying complete, truthful, and accurate cargo declarations and regulatory documentation. Final customs decisions, inspections, and duties assessment rest solely with the respective national revenue and border control authorities.",
+    "safetyPractices": "All client document sets are handled through secure, access-controlled directories to protect business confidentiality and POPIA compliance."
+  },
+  {
+    "id": "tailored-logistics",
+    "title": "Tailored Logistics Solutions",
+    "shortDescription": "Custom contract transport, dedicated fleet configurations, and industrial project coordination.",
+    "longDescription": "Some supply chains require dedicated resources and specialized schedules. DFS Group designs tailored logistics solutions to fit contract transport needs, seasonal peaks, and mining project mobilizations.",
+    "features": [
+      "Long-term contract distribution with dedicated truck and trailer options",
+      "Customized scheduled shuttle loops between regional supply nodes",
+      "Project-based logistics coordination for mine construction or industrial installations",
+      "Tailored loading and unloading equipment integrations",
+      "Direct system-to-system data integration plans (DFS-OS API)"
+    ],
+    "cargoExamples": ["Mining equipment transfers", "Infrastructure project inputs", "High-frequency industrial components", "Dedicated retail warehouse shuttles"],
+    "safetyPractices": "Tailored projects are subject to custom Risk Assessments and Standard Operating Procedures (SOPs) developed in collaboration with client safety departments."
+  }
+]

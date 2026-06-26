@@ -1,0 +1,55 @@
+[
+  {
+    "id": "volvo-fh-440-tipper-45",
+    "unitName": "2025 Volvo FH 440",
+    "trailerType": "45 m³ Side Tipper",
+    "quantity": 6,
+    "loadingCapacity": "38 MT",
+    "suitableCargo": ["Coal", "Copper concentrates", "Manganese ore", "Agricultural bulk (grains, fertilizer)"],
+    "operatingConditions": "Heavy-duty long-haul highway and corridor transport across Southern Africa.",
+    "safetyFeatures": ["Electronic Braking System (EBS)", "Lane Keeping Support", "Driver Alert Support", "Auto-tarp roll cover"],
+    "trackingCapability": "Equipped with advanced telematics (FMS) transmitting real-time speed, weight, and coordinates.",
+    "requiresClientConfirmation": false,
+    "category": "bulk"
+  },
+  {
+    "id": "scania-r460-tipper-45",
+    "unitName": "2025 Scania R460",
+    "trailerType": "45 m³ Side Tipper",
+    "quantity": 4,
+    "loadingCapacity": "38 MT",
+    "suitableCargo": ["Bulk minerals", "Aggregates", "Salt", "Dry industrial bulk materials"],
+    "operatingConditions": "Optimized for heavy regional routes. High fuel efficiency under maximum load.",
+    "safetyFeatures": ["Scania Opticruise transmission", "Retarder brake control", "Electronic Stability Program (ESP)", "Roll-stability system"],
+    "trackingCapability": "Real-time dual-band GPS + GLONASS tracker integrated with fuel and axle load sensors.",
+    "requiresClientConfirmation": false,
+    "category": "bulk"
+  },
+  {
+    "id": "volvo-fmx-440-tipper-22",
+    "unitName": "2025 Volvo FH/FMX 440",
+    "trailerType": "22.5 m³ Side Tipper",
+    "quantity": 5,
+    "loadingCapacity": "39 MT",
+    "suitableCargo": ["High-density ores", "Heavy aggregates", "Chrome ore", "Demolition and construction debris"],
+    "operatingConditions": "Rough-terrain routes, mining site access roads, and short-to-medium haul bulk movements.",
+    "safetyFeatures": ["Reinforced structural steel trailer walls", "Under-run protection", "Rear-view cameras", "On-board axle weighing scales"],
+    "trackingCapability": "Dual active-tracking nodes with remote payload monitoring and geofence alerts.",
+    "requiresClientConfirmation": true,
+    "confirmationNotes": "Confirm exact truck model: Volvo FH 440 or Volvo FMX 440.",
+    "category": "bulk"
+  },
+  {
+    "id": "scania-g460-flat-deck",
+    "unitName": "2023 Scania G460",
+    "trailerType": "Flat-Deck Link Combination",
+    "quantity": 12,
+    "loadingCapacity": "36 MT",
+    "suitableCargo": ["Bagged cement", "Bagged fertilizer", "Palletized fast-moving consumer goods (FMCG)", "Timber", "Steel coils and structures"],
+    "operatingConditions": "Inter-city distribution and cross-border haulage on established transit routes.",
+    "safetyFeatures": ["Heavy-duty load-securing straps & chains", "Anti-slip deck surfaces", "Advanced cargo lashing points", "ABS-assisted braking"],
+    "trackingCapability": "Continuous active cellular track units, cargo strap tension sensors, and electronic route logs.",
+    "requiresClientConfirmation": false,
+    "category": "bagged"
+  }
+]

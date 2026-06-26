@@ -1,0 +1,106 @@
+{
+  "company": {
+    "name": "DFS Group",
+    "domain": "www.dfs.group",
+    "foundedYear": 2019,
+    "email": "info@bw-dfsgroup.com",
+    "phone1": "+267 74 191 781",
+    "phone2": "+267 316 3233",
+    "headquarters": {
+      "address": "Plot 3082, Mmamashia",
+      "city": "Gaborone",
+      "country": "Botswana"
+    }
+  },
+  "stats": {
+    "countriesServed": {
+      "value": "4",
+      "label": "Countries Serviced",
+      "isConfirmed": true,
+      "details": "Botswana, South Africa, Zambia, Zimbabwe"
+    },
+    "yearsExperience": {
+      "value": "7",
+      "label": "Years of Operation",
+      "isConfirmed": true,
+      "details": "Founded in Gaborone in 2019"
+    },
+    "fleetUnits": {
+      "value": "27",
+      "label": "Active Fleet Units",
+      "isConfirmed": false,
+      "details": "Volvo FH/FMX Side Tippers and Scania Flat-Decks"
+    },
+    "crossBorderRoutes": {
+      "value": "12+",
+      "label": "Key Border Corridors",
+      "isConfirmed": true,
+      "details": "Major transit routes across Southern Africa"
+    }
+  },
+  "offices": [
+    {
+      "id": "gaborone",
+      "city": "Gaborone",
+      "country": "Botswana",
+      "role": "Headquarters",
+      "address": "Plot 3082, Mmamashia, Gaborone",
+      "phone": "+267 316 3233",
+      "email": "info@bw-dfsgroup.com",
+      "services": ["Bulk Cargo", "Bagged Cargo", "Customs Clearing", "Tailored Logistics"],
+      "coordinates": { "lat": -24.582, "lng": 25.961 }
+    },
+    {
+      "id": "johannesburg",
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "role": "Regional Service Hub",
+      "address": "Transit Area, Johannesburg",
+      "phone": "+27 11 000 0000 (Placeholder)",
+      "email": "jhb@bw-dfsgroup.com",
+      "services": ["Cross-Border Freight", "Fleet Maintenance", "Logistics Coordination"],
+      "coordinates": { "lat": -26.204, "lng": 28.047 }
+    },
+    {
+      "id": "lusaka",
+      "city": "Lusaka",
+      "country": "Zambia",
+      "role": "Northern Corridor Hub",
+      "address": "Central Industrial District, Lusaka",
+      "phone": "+260 97 000 0000 (Placeholder)",
+      "email": "lusaka@bw-dfsgroup.com",
+      "services": ["Bulk Cargo", "Bagged Cargo", "Customs Clearing Support"],
+      "coordinates": { "lat": -15.387, "lng": 28.322 }
+    },
+    {
+      "id": "harare",
+      "city": "Harare",
+      "country": "Zimbabwe",
+      "role": "Eastern Transit Hub",
+      "address": "Logistics Boulevard, Harare",
+      "phone": "+263 24 200 0000 (Placeholder)",
+      "email": "harare@bw-dfsgroup.com",
+      "services": ["Cross-Border Logistics", "Customs Support", "Bagged Cargo"],
+      "coordinates": { "lat": -17.825, "lng": 31.053 }
+    }
+  ],
+  "expansion": [
+    { "city": "Walvis Bay", "country": "Namibia", "status": "Planned Expansion Target" },
+    { "city": "Beira", "country": "Mozambique", "status": "Planned Corridor Target" },
+    { "city": "Dar es Salaam", "country": "Tanzania", "status": "Planned Port Connect" },
+    { "city": "Durban", "country": "South Africa", "status": "Planned Port Connect" }
+  ],
+  "sustainability": {
+    "electrificationTarget": {
+      "value": "25% fleet electrification by 2030",
+      "isConfirmed": false,
+      "draftValue": "Explore lower-emission options and transition pathway as commercial models stabilize."
+    },
+    "initiatives": [
+      "Carbon-emission monitoring per metric tonne",
+      "Efficient route planning to minimize empty return runs",
+      "Testing of low-friction tires and aerodynamic trailers",
+      "Driver education on fuel-efficient driving techniques"
+    ]
+  }
+}
