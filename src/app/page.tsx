@@ -2,16 +2,16 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import settings from "@/data/settings.json";
 
-// Import modular homepage components
 import Hero from "@/components/home/Hero";
-import TrackingPanel from "@/components/home/TrackingPanel";
+import PortalAccessPanel from "@/components/home/PortalAccessPanel";
 import QuickActions from "@/components/home/QuickActions";
+import DivisionsSection from "@/components/home/DivisionsSection";
 import ServiceShowcase from "@/components/home/ServiceShowcase";
 import FleetPreview from "@/components/home/FleetPreview";
 import RegionalMap from "@/components/RegionalMap";
 import WhyDFS from "@/components/home/WhyDFS";
-import TechnologySection from "@/components/home/TechnologySection";
 import SustainabilitySafety from "@/components/home/SustainabilitySafety";
+import PortalCTA from "@/components/home/PortalCTA";
 import NewsUpdates from "@/components/home/NewsUpdates";
 import FinalCTA from "@/components/home/FinalCTA";
 
@@ -21,11 +21,14 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <Hero />
 
-      {/* 2. OVERLAPPING SHIPMENT TRACKING PANEL */}
-      <TrackingPanel />
+      {/* 2. CUSTOMER PORTAL ACCESS PANEL (replaces tracking panel) */}
+      <PortalAccessPanel />
 
       {/* 3. QUICK ACTION CARDS */}
       <QuickActions />
+
+      {/* 4. BUSINESS DIVISIONS — DFS Trucking, Clearing, Express */}
+      <DivisionsSection />
 
       {/* 4. STATISTICS BAR */}
       <section className="relative py-12 bg-white border-t border-b border-border-dfs">
@@ -59,11 +62,9 @@ export default function Home() {
 
       {/* 7. REGIONAL NETWORK CORRIDORS */}
       <section className="py-20 lg:py-28 bg-primary-black text-white border-t border-accent-gold/20 relative">
-        {/* Subtle grid mesh */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
-          
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="text-xs uppercase font-extrabold tracking-widest text-accent-gold block font-heading">
               Geographic Network
@@ -72,15 +73,16 @@ export default function Home() {
               Connected Across Southern Africa
             </h2>
             <p className="text-sm sm:text-base text-white/60 leading-relaxed">
-              DFS Group links main logistics routes in Botswana, South Africa, Zambia, and Zimbabwe. We operate on the ground at major border corridors to ensure fast fleet turnaround times.
+              DFS Group links main logistics routes in Botswana, South Africa,
+              Zambia, and Zimbabwe. We operate on the ground at major border
+              corridors to ensure fast fleet turnaround times.
             </p>
           </div>
 
-          {/* Render the interactive SVG corridor map */}
           <div className="bg-primary-deep/50 border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-sm">
             <RegionalMap />
           </div>
-          
+
           <div className="text-center pt-4">
             <Link
               href="/network"
@@ -96,11 +98,11 @@ export default function Home() {
       {/* 8. WHY CHOOSE DFS ADVANTAGES */}
       <WhyDFS />
 
-      {/* 9. TECHNOLOGY & DFS-OS OVERVIEW */}
-      <TechnologySection />
-
-      {/* 10. SUSTAINABILITY & HSEQE SAFETY */}
+      {/* 9. SUSTAINABILITY & HSEQE SAFETY */}
       <SustainabilitySafety />
+
+      {/* 10. CUSTOMER PORTAL CTA (replaces technology section) */}
+      <PortalCTA />
 
       {/* 11. NEWS AND BULLETINS */}
       <NewsUpdates />

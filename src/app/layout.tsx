@@ -3,6 +3,7 @@ import "./globals.css";
 import UtilityBar from "@/components/layout/UtilityBar";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { AuthProvider } from "@/lib/auth/AuthContext";
 
 export const metadata: Metadata = {
   title: {
@@ -54,12 +55,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col font-sans antialiased bg-white text-charcoal">
-        <UtilityBar />
-        <Header />
-        <main className="flex-grow flex flex-col">
-          {children}
-        </main>
-        <Footer />
+        <AuthProvider>
+          <UtilityBar />
+          <Header />
+          <main className="flex-grow flex flex-col">
+            {children}
+          </main>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
