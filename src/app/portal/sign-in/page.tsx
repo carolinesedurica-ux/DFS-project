@@ -61,6 +61,7 @@ export default function PortalSignIn() {
           src="/images/dfs-cross-border-road-freight.jpg"
           alt="DFS Group logistics truck at a Southern African border corridor."
           fill
+          sizes="50vw"
           className="object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-deep/90 via-primary-deep/70 to-primary-black/90"></div>

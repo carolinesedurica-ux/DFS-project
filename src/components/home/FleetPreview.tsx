@@ -121,6 +121,7 @@ export default function FleetPreview() {
                       src={getVehicleImage(item.trailerType)}
                       alt={`${item.unitName} - ${item.trailerType}`}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                     <div className="absolute top-2 right-2 bg-primary-deep/90 border border-accent-gold/40 text-accent-gold text-[10px] px-2.5 py-1 rounded-lg font-bold font-mono">
@@ -188,6 +189,7 @@ export default function FleetPreview() {
             src="/images/dfs-fleet-lineup.jpg"
             alt="DFS Group Volvo and Scania regional logistics fleet parked in Gaborone."
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

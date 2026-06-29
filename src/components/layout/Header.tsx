@@ -60,6 +60,7 @@ export default function Header() {
                 src="/images/logos/dfs-group-logo.png"
                 alt="DFS Group Logo"
                 fill
+                sizes="(max-width: 640px) 144px, 176px"
                 className="object-contain object-left"
                 priority
               />

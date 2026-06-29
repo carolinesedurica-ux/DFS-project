@@ -80,6 +80,7 @@ export default function TechnologySection() {
                   src="/images/dfs-technology-dashboard.png"
                   alt="SADC tracking map and axle telemetry dashboard interface on DFS-OS."
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>

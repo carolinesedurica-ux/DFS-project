@@ -60,6 +60,7 @@ export default function NewsUpdates() {
                     src={getCategoryImage(item.category)}
                     alt={item.title}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                     className="object-cover"
                   />
                   

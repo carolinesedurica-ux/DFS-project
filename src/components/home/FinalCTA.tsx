@@ -12,6 +12,7 @@ export default function FinalCTA() {
           src="/images/dfs-home-hero-fleet.jpg"
           alt="DFS Group logistics truck on a SADC regional corridor."
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-deep/95 via-primary-deep/80 to-primary-black/90 z-10"></div>

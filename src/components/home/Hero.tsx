@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Cpu, Globe } from "lucide-react";
 
@@ -20,8 +21,28 @@ export default function Hero() {
           {/* Hero Copy */}
           <div className="lg:col-span-8 space-y-6 text-left animate-fade-in-up">
             
+
+            {/* DFS Group Logo Badge */}
+            <div className="inline-flex items-center animate-logo-entrance">
+              <div className="relative flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-3 animate-logo-glow ring-1 ring-accent-gold/10">
+                {/* Glow behind logo */}
+                <div className="absolute inset-0 rounded-2xl bg-white/5" />
+                <div className="relative h-14 w-48">
+                  <Image
+                    src="/images/logos/dfs-group-logo.png"
+                    alt="DFS Group"
+                    fill
+                    sizes="192px"
+                    className="object-contain object-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Tagline pill */}
             <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-bold text-accent-gold uppercase tracking-wider">
-              <ShieldCheck className="h-4.5 w-4.5 text-accent-gold" />
+              <ShieldCheck className="h-3.5 w-3.5 text-accent-gold" />
               <span>Royal Logistics. Regional Strength.</span>
             </div>
 

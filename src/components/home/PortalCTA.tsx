@@ -80,6 +80,7 @@ export default function PortalCTA() {
                   src="/images/dfs-technology-dashboard.png"
                   alt="DFS Customer Portal dashboard preview showing shipment tracking and document management."
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>

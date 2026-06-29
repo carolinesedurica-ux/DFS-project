@@ -99,6 +99,7 @@ export default function SustainabilitySafety() {
                 src="/images/dfs-driver-safety.png"
                 alt="DFS logistics driver verifying safety sensors on truck chassis."
                 fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-primary-deep/10"></div>

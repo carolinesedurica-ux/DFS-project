@@ -131,3 +131,28 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-4px);
   box-shadow: 0 20px 48px rgba(23, 6, 34, 0.11);
 }
+
+/* Logo badge animations */
+@keyframes logoEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-logo-entrance {
+  animation: logoEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes logoGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(220, 161, 29, 0.15), 0 8px 32px rgba(0,0,0,0.2); }
+  50% { box-shadow: 0 0 40px rgba(220, 161, 29, 0.28), 0 8px 32px rgba(0,0,0,0.2); }
+}
+
+.animate-logo-glow {
+  animation: logoGlow 3s ease-in-out infinite;
+}

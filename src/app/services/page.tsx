@@ -63,6 +63,7 @@ export default function Services() {
                     src={getServiceImage(srv.id)}
                     alt={srv.title}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 42vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-primary-deep/5"></div>

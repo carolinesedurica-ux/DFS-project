@@ -91,6 +91,7 @@ export default function ExpressPage() {
           src="/images/dfs-home-hero-fleet.jpg"
           alt="DFS Express courier delivery vehicle in Botswana."
           fill
+          sizes="100vw"
           className="object-cover opacity-20"
           priority
         />
@@ -110,13 +111,19 @@ export default function ExpressPage() {
             <span>Back to DFS Group</span>
           </Link>
 
-          <div className="relative h-20 w-52 mb-6">
-            <Image
-              src="/images/logos/dfs-express-logo.png"
-              alt="DFS Express"
-              fill
-              className="object-contain object-left brightness-0 invert"
-            />
+          <div className="mb-8 animate-logo-entrance">
+            <div className="inline-flex items-center bg-white/95 backdrop-blur-md rounded-2xl px-5 py-3 animate-logo-glow ring-1 ring-white/50">
+              <div className="relative h-16 w-52">
+                <Image
+                  src="/images/logos/dfs-express-logo.png"
+                  alt="DFS Express"
+                  fill
+                  sizes="208px"
+                  className="object-contain object-left"
+                  priority
+                />
+              </div>
+            </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-3xl font-display">
@@ -304,8 +311,10 @@ export default function ExpressPage() {
       <section className="py-20 bg-[#2a0050] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(220,161,29,0.08)_0%,transparent_70%)]" />
         <div className="relative z-10 max-w-2xl mx-auto px-4 space-y-6">
-          <div className="relative h-20 w-44 mx-auto">
-            <Image src="/images/logos/dfs-express-logo.png" alt="DFS Express" fill className="object-contain brightness-0 invert" />
+          <div className="inline-flex items-center bg-white/95 rounded-2xl px-5 py-3 shadow-lg ring-1 ring-white/30 mx-auto">
+            <div className="relative h-16 w-44">
+              <Image src="/images/logos/dfs-express-logo.png" alt="DFS Express" fill sizes="176px" className="object-contain" />
+            </div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display">
             Send It Express Today
