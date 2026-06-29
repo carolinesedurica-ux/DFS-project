@@ -115,7 +115,7 @@ export default function ExpressPage() {
             <div className="inline-flex items-center bg-white/95 backdrop-blur-md rounded-2xl px-5 py-3 animate-logo-glow ring-1 ring-white/50">
               <div className="relative h-16 w-52">
                 <Image
-                  src="/images/logos/dfs-express-logo.png"
+                  src="/images/logos/dfs-express-logo.svg"
                   alt="DFS Express"
                   fill
                   sizes="208px"
@@ -313,7 +313,7 @@ export default function ExpressPage() {
         <div className="relative z-10 max-w-2xl mx-auto px-4 space-y-6">
           <div className="inline-flex items-center bg-white/95 rounded-2xl px-5 py-3 shadow-lg ring-1 ring-white/30 mx-auto">
             <div className="relative h-16 w-44">
-              <Image src="/images/logos/dfs-express-logo.png" alt="DFS Express" fill sizes="176px" className="object-contain" />
+              <Image src="/images/logos/dfs-express-logo.svg" alt="DFS Express" fill sizes="176px" className="object-contain" />
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display">

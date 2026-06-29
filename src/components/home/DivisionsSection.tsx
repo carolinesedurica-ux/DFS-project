@@ -103,7 +103,7 @@ const divisions = [
     tagline: "Bulk & Bagged Freight Across Southern Africa",
     description:
       "High-capacity road freight specialists operating Volvo FH and Scania side-tippers and flat-decks on SADC corridors. Bulk minerals, bagged cargo and cross-border haulage.",
-    logo: "/images/logos/dfs-trucking-logo.png",
+    logo: "/images/logos/dfs-trucking-logo.svg",
     href: "/trucking",
     bgFrom: "from-[#3b1063]",
     bgTo: "to-[#1a0830]",
@@ -116,7 +116,7 @@ const divisions = [
     tagline: "Customs Clearing & Compliance Experts",
     description:
       "Professional customs clearing agents operating at all major SADC border posts. HS code classification, duty optimisation, SARS compliance and digital documentation management.",
-    logo: "/images/logos/dfs-clearing-logo.png",
+    logo: "/images/logos/dfs-clearing-logo.svg",
     href: "/clearing",
     bgFrom: "from-[#2a1a00]",
     bgTo: "to-[#1a1200]",
@@ -129,7 +129,7 @@ const divisions = [
     tagline: "Express Courier & Last-Mile Delivery",
     description:
       "Fast, reliable courier and parcel delivery services across Botswana and the region. Same-day and next-day options for documents, parcels and commercial consignments.",
-    logo: "/images/logos/dfs-express-logo.png",
+    logo: "/images/logos/dfs-express-logo.svg",
     href: "/express",
     bgFrom: "from-[#3b1063]",
     bgTo: "to-[#6d0077]",
