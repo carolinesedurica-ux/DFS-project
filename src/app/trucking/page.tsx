@@ -58,11 +58,11 @@ export default function TruckingPage() {
       {/* HERO */}
       <section className="relative min-h-[75vh] flex items-end bg-[#1a0830]">
         <Image
-          src="/images/dfs-cross-border-road-freight.jpg"
-          alt="DFS Trucking fleet on a SADC corridor highway."
+          src="/images/dfs-fleet-side-tipper-lineup.png"
+          alt="DFS Trucking fleet — Scania and Volvo side-tipper units on a SADC corridor."
           fill
           sizes="100vw"
-          className="object-cover opacity-30"
+          className="object-cover opacity-40"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a0830] via-[#1a0830]/70 to-transparent" />
@@ -174,7 +174,7 @@ export default function TruckingPage() {
         </div>
       </section>
 
-      {/* FLEET SNAPSHOT */}
+      {/* FLEET GALLERY */}
       <section className="py-20 bg-light-grey border-t border-b border-border-dfs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-3">
@@ -186,27 +186,52 @@ export default function TruckingPage() {
               across the SADC region.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {fleet.map((v) => (
-              <div
-                key={v.model}
-                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm space-y-3"
-              >
-                <div className="text-xs font-bold text-accent-gold uppercase tracking-wider">
-                  {v.count}
-                </div>
-                <h3 className="font-extrabold text-primary-deep text-lg leading-tight">
-                  {v.model}
-                </h3>
-                <p className="text-xs text-slate font-semibold">{v.config}</p>
-                <div className="flex items-center justify-between text-xs pt-2 border-t border-gray-50">
-                  <span className="text-grey">Max Payload</span>
-                  <span className="font-extrabold text-primary-royal">{v.payload}</span>
+
+          {/* Hero fleet image */}
+          <div className="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden mb-6 shadow-lg">
+            <Image
+              src="/images/dfs-fleet-branding-event.png"
+              alt="DFS Group fleet lineup at a SADC regional event"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/70 to-transparent flex items-end p-6">
+              <div>
+                <p className="text-white font-extrabold text-xl">DFS Group — SADC Corridor Fleet</p>
+                <p className="text-white/70 text-sm mt-1">Scania & Volvo units operating across Botswana, South Africa, Zambia & Zimbabwe</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Photo grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+            {[
+              { src: '/images/dfs-fleet-scania-volvo-depot.png', label: 'Scania + Volvo Depot' },
+              { src: '/images/dfs-scania-flatdeck-road.png', label: 'Flat-Deck on Corridor' },
+              { src: '/images/dfs-volvo-fh-pair.png', label: 'Volvo FH 440 Units' },
+              { src: '/images/dfs-scania-lineup-blue-sky.png', label: 'Scania Lineup' },
+              { src: '/images/dfs-scania-sunset-depot.png', label: 'Fleet at Dusk' },
+              { src: '/images/dfs-fleet-five-scania-rain.png', label: '5 Units in Field' },
+              { src: '/images/dfs-scania-flatdeck-open.png', label: 'Flat-Deck Link' },
+              { src: '/images/dfs-volvo-depot-hangar.png', label: 'Volvo at Depot' },
+            ].map((img) => (
+              <div key={img.src} className="relative rounded-xl overflow-hidden aspect-square shadow-sm group">
+                <Image
+                  src={img.src}
+                  alt={img.label}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+                  <p className="text-white text-[10px] font-semibold">{img.label}</p>
                 </div>
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
+
+          <div className="text-center">
             <Link
               href="/fleet"
               className="inline-flex items-center space-x-2 text-sm font-bold text-primary-royal hover:text-accent-gold transition-colors"

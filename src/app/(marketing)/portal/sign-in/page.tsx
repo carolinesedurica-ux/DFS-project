@@ -36,9 +36,9 @@ export default function PortalSignIn() {
     if (result.success) {
       // Route based on role
       if (canAccessAdmin(result.user.role)) {
-        router.push("/admin/dashboard");
+        router.push("/admin/trucking");
       } else {
-        router.push("/portal/dashboard");
+        router.push("/trucking/dashboard");
       }
     } else {
       setError(errorMessages[result.error] || "An unexpected error occurred.");

@@ -49,11 +49,23 @@ export default function Fleet() {
     setCapacityFilter("all");
   };
 
-  const getVehicleImage = (trailerType: string) => {
-    if (trailerType.toLowerCase().includes("tipper")) {
-      return "/images/dfs-bulk-cargo-side-tipper.png";
-    }
-    return "/images/dfs-bagged-cargo-flatdeck.png";
+  const vehicleImages = [
+    '/images/dfs-fleet-scania-volvo-depot.png',
+    '/images/dfs-scania-flatdeck-road.png',
+    '/images/dfs-fleet-side-tipper-lineup.png',
+    '/images/dfs-fleet-branding-event.png',
+    '/images/dfs-scania-flatdeck-open.png',
+    '/images/dfs-scania-sunset-depot.png',
+    '/images/dfs-scania-lineup-blue-sky.png',
+    '/images/dfs-volvo-fh-pair.png',
+    '/images/dfs-fleet-five-scania-rain.png',
+    '/images/dfs-fleet-scania-overcast.png',
+    '/images/dfs-volvo-depot-hangar.png',
+  ];
+
+  const getVehicleImage = (trailerType: string, idx: number) => {
+    // Alternate real photos across cards
+    return vehicleImages[idx % vehicleImages.length];
   };
 
   return (
@@ -147,7 +159,7 @@ export default function Fleet() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredFleet.length > 0 ? (
             <div className="space-y-8">
-              {filteredFleet.map((item: FleetItem) => (
+              {filteredFleet.map((item: FleetItem, idx: number) => (
                 <div
                   key={item.id}
                   id={item.id}
@@ -158,7 +170,7 @@ export default function Fleet() {
                     {/* Vehicle Card Image */}
                     <div className="relative h-48 sm:h-56 rounded-xl overflow-hidden bg-primary-light shadow-sm">
                       <Image
-                        src={getVehicleImage(item.trailerType)}
+                        src={getVehicleImage(item.trailerType, idx)}
                         alt={`${item.unitName} specifications`}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
