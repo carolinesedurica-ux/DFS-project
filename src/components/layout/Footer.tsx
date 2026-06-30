@@ -27,7 +27,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <div className="relative h-14 w-44">
                 <Image
-                  src="/images/logos/dfs-group-logo.svg"
+                  src="/images/logos/dfsgrouplogo.jpeg"
                   alt="DFS Group Logo"
                   fill
                   sizes="176px"

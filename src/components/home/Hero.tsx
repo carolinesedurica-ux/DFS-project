@@ -29,7 +29,7 @@ export default function Hero() {
                 <div className="absolute inset-0 rounded-2xl bg-white/5" />
                 <div className="relative h-14 w-48">
                   <Image
-                    src="/images/logos/dfs-group-logo.svg"
+                    src="/images/logos/dfsgrouplogo.jpeg"
                     alt="DFS Group"
                     fill
                     sizes="192px"

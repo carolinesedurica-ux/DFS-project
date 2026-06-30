@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import UtilityBar from "@/components/layout/UtilityBar";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import { AuthProvider } from "@/lib/auth/AuthContext";
 
 export const metadata: Metadata = {
@@ -56,12 +53,7 @@ export default function RootLayout({
     <html lang="en" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col font-sans antialiased bg-white text-charcoal">
         <AuthProvider>
-          <UtilityBar />
-          <Header />
-          <main className="flex-grow flex flex-col">
-            {children}
-          </main>
-          <Footer />
+          {children}
         </AuthProvider>
       </body>
     </html>

@@ -57,7 +57,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-1 flex-shrink-0">
             <div className="relative h-14 w-36 sm:h-16 sm:w-44">
               <Image
-                src="/images/logos/dfs-group-logo.svg"
+                src="/images/logos/dfsgrouplogo.jpeg"
                 alt="DFS Group Logo"
                 fill
                 sizes="(max-width: 640px) 144px, 176px"
