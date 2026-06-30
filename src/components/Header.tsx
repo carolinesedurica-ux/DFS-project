@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Mail, Truck, Globe, FileText } from "lucide-react";
+import { Menu, X, Phone, Mail, Truck, Globe, FileText, Shield } from "lucide-react";
 import settings from "@/data/settings.json";
 
 export default function Header() {
@@ -95,6 +95,13 @@ export default function Header() {
                 <span>Track Cargo</span>
               </Link>
               <Link
+                href="/admin/trucking"
+                className="flex items-center space-x-1.5 px-4 py-2 border border-primary-deep/20 text-primary-deep hover:border-primary-deep hover:bg-gray-50 rounded-md text-sm font-medium transition-all"
+              >
+                <Shield className="h-4 w-4" />
+                <span>Admin</span>
+              </Link>
+              <Link
                 href="/quote"
                 className="flex items-center space-x-1.5 px-5 py-2.5 bg-accent-gold text-primary-deep hover:bg-accent-hover rounded-md text-sm font-bold shadow-sm transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               >
@@ -143,6 +150,14 @@ export default function Header() {
                 >
                   <Truck className="h-5 w-5" />
                   <span>Track Cargo</span>
+                </Link>
+                <Link
+                  href="/admin/trucking"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center justify-center space-x-2 w-full px-4 py-3 border border-primary-deep/20 text-primary-deep hover:bg-gray-50 rounded-md text-base font-semibold"
+                >
+                  <Shield className="h-5 w-5" />
+                  <span>Admin</span>
                 </Link>
                 <Link
                   href="/quote"

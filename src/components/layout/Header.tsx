@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, FileText, Lock } from "lucide-react";
+import { Menu, X, FileText, Lock, Shield } from "lucide-react";
 import settings from "@/data/settings.json";
 
 export default function Header() {
@@ -97,18 +97,18 @@ export default function Header() {
           {/* CTAs */}
           <div className="hidden lg:flex items-center space-x-3">
             <Link
-              href="/quote"
-              className="flex items-center space-x-1.5 px-5 py-2.5 gold-gradient hover:opacity-95 text-primary-deep rounded-xl text-xs font-extrabold shadow-sm transition-all transform hover:-translate-y-0.5"
-            >
-              <FileText className="h-4 w-4" />
-              <span>Request a Quote</span>
-            </Link>
-            <Link
               href="/portal/sign-in"
               className="flex items-center space-x-1.5 px-4 py-2.5 bg-primary-royal hover:bg-primary-deep text-white rounded-xl text-xs font-bold shadow-sm transition-all border border-accent-gold/30"
             >
               <Lock className="h-3.5 w-3.5 text-accent-gold" />
-              <span>Customer Portal</span>
+              <span>Customer Login</span>
+            </Link>
+            <Link
+              href="/admin/trucking"
+              className="flex items-center space-x-1.5 px-4 py-2.5 gold-gradient hover:opacity-95 text-primary-deep rounded-xl text-xs font-extrabold shadow-sm transition-all transform hover:-translate-y-0.5"
+            >
+              <Shield className="h-3.5 w-3.5" />
+              <span>Admin Portal</span>
             </Link>
           </div>
 
@@ -148,15 +148,15 @@ export default function Header() {
               ))}
             </nav>
             <div className="pt-6 border-t border-white/10 flex flex-col gap-3">
-              <Link href="/quote" onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center space-x-2 w-full py-3.5 gold-gradient text-primary-deep rounded-xl text-sm font-extrabold shadow-md">
-                <FileText className="h-5 w-5" />
-                <span>Request a Quote</span>
-              </Link>
               <Link href="/portal/sign-in" onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center space-x-2 w-full py-3.5 bg-primary-royal text-white rounded-xl text-sm font-bold border border-accent-gold/30">
                 <Lock className="h-5 w-5 text-accent-gold" />
-                <span>Customer Portal</span>
+                <span>Customer Login</span>
+              </Link>
+              <Link href="/admin/trucking" onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center space-x-2 w-full py-3.5 gold-gradient text-primary-deep rounded-xl text-sm font-extrabold shadow-md">
+                <Shield className="h-5 w-5" />
+                <span>Admin Portal</span>
               </Link>
             </div>
             <div className="pt-8 text-center text-xs text-white/50 space-y-1">
