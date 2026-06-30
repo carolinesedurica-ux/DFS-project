@@ -78,26 +78,40 @@ dfs-website/
 │
 ├── src/
 │   ├── app/                          # Next.js App Router Pages
-│   │   ├── layout.tsx                # Global shell (UtilityBar + Header + Footer)
+│   │   ├── layout.tsx                # Root shell (HTML, Body, AuthProvider)
 │   │   ├── globals.css               # Design tokens, fonts, animations
-│   │   ├── page.tsx                  # Homepage (modular component assembly)
-│   │   ├── about/page.tsx            # Corporate governance & leadership
-│   │   ├── services/page.tsx         # Bulk, Bagged, Cross-Border, Customs
-│   │   ├── fleet/page.tsx            # Fleet specs with capacity filters
-│   │   ├── network/page.tsx          # SADC corridor hubs & SVG map
-│   │   ├── technology/page.tsx       # DFS-OS vision & phase roadmap
-│   │   ├── sustainability-safety/    # Green targets & HSEQE downloads
-│   │   ├── contact/page.tsx          # Inquiry form with Suspense wrapper
-│   │   ├── quote/page.tsx            # 5-step interactive quote workflow
-│   │   ├── track/page.tsx            # Shipment timeline simulator
-│   │   ├── admin-preview/page.tsx    # Mock dispatcher control panel
-│   │   └── portal-preview/page.tsx   # Mock customer document dashboard
+│   │   ├── (marketing)/              # Corporate Marketing Website Route Group
+│   │   │   ├── layout.tsx            # Global shell (UtilityBar + Header + Footer)
+│   │   │   ├── page.tsx              # Homepage (modular component assembly)
+│   │   │   ├── about/page.tsx        # Corporate governance & leadership
+│   │   │   ├── services/page.tsx     # Bulk, Bagged, Cross-Border, Customs
+│   │   │   ├── fleet/page.tsx        # Fleet specs with capacity filters
+│   │   │   ├── network/page.tsx      # SADC corridor hubs & SVG map
+│   │   │   ├── technology/page.tsx   # DFS-OS vision & phase roadmap
+│   │   │   ├── sustainability-safety/# Green targets & HSEQE downloads
+│   │   │   ├── contact/page.tsx      # Inquiry form with Suspense wrapper
+│   │   │   ├── quote/page.tsx        # 5-step interactive quote workflow
+│   │   │   ├── dashboard/page.tsx    # Corporate client dashboard
+│   │   │   └── portal/               # Authentication pages
+│   │   ├── trucking/                 # Independent Trucking Portal
+│   │   │   ├── layout.tsx            # Portal-specific Sidebar and Header
+│   │   │   └── dashboard/page.tsx    # Trucking operations dashboard
+│   │   ├── clearing/                 # Independent Clearing Portal
+│   │   │   ├── layout.tsx            # Portal-specific Sidebar and Header
+│   │   │   └── dashboard/page.tsx    # Customs clearing dashboard
+│   │   └── express/                  # Independent Express Portal
+│   │       ├── layout.tsx            # Portal-specific Sidebar and Header
+│   │       └── dashboard/page.tsx    # Express courier dashboard
 │   │
 │   ├── components/
 │   │   ├── layout/                   # Persistent layout components
 │   │   │   ├── UtilityBar.tsx        # Top utility bar (location, support)
 │   │   │   ├── Header.tsx            # Scroll-aware sticky nav (transparent → white)
 │   │   │   └── Footer.tsx            # Structured columns, purple-black, gold accents
+│   │   │
+│   │   ├── portals/                  # Multi-portal shared layout elements
+│   │   │   ├── PortalHeader.tsx      # Top nav specific to portals
+│   │   │   └── PortalSidebar.tsx     # Configurable left side navigation
 │   │   │
 │   │   ├── home/                     # Homepage section components
 │   │   │   ├── Hero.tsx              # Full-width hero with dispatch feed panel
