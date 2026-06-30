@@ -104,7 +104,7 @@ export default function Header() {
               <span>Customer Login</span>
             </Link>
             <Link
-              href="/admin/trucking"
+              href="/admin/dashboard"
               className="flex items-center space-x-1.5 px-4 py-2.5 gold-gradient hover:opacity-95 text-primary-deep rounded-xl text-xs font-extrabold shadow-sm transition-all transform hover:-translate-y-0.5"
             >
               <Shield className="h-3.5 w-3.5" />
@@ -153,7 +153,7 @@ export default function Header() {
                 <Lock className="h-5 w-5 text-accent-gold" />
                 <span>Customer Login</span>
               </Link>
-              <Link href="/admin/trucking" onClick={() => setMobileMenuOpen(false)}
+              <Link href="/admin/dashboard" onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center space-x-2 w-full py-3.5 gold-gradient text-primary-deep rounded-xl text-sm font-extrabold shadow-md">
                 <Shield className="h-5 w-5" />
                 <span>Admin Portal</span>

@@ -95,7 +95,7 @@ export default function Header() {
                 <span>Track Cargo</span>
               </Link>
               <Link
-                href="/admin/trucking"
+                href="/admin/dashboard"
                 className="flex items-center space-x-1.5 px-4 py-2 border border-primary-deep/20 text-primary-deep hover:border-primary-deep hover:bg-gray-50 rounded-md text-sm font-medium transition-all"
               >
                 <Shield className="h-4 w-4" />
@@ -152,7 +152,7 @@ export default function Header() {
                   <span>Track Cargo</span>
                 </Link>
                 <Link
-                  href="/admin/trucking"
+                  href="/admin/dashboard"
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center justify-center space-x-2 w-full px-4 py-3 border border-primary-deep/20 text-primary-deep hover:bg-gray-50 rounded-md text-base font-semibold"
                 >
