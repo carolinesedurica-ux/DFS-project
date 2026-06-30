@@ -8,8 +8,8 @@ export default function ServiceShowcase() {
       id: "bulk-cargo",
       title: "Bulk Cargo Transport",
       tagline: "High-Efficiency Haulage for Mining & Aggregates",
-      image: "/images/dfs-bulk-cargo-side-tipper.png",
-      alt: "DFS Group double side-tipper rig unloading coal at a mineral terminal.",
+      image: "/images/dfs-volvo-side-tipper-action.jpg",
+      alt: "DFS Group Volvo side-tipper truck in action on a SADC corridor.",
       description:
         "DFS Group provides high-volume bulk cargo transportation utilizing specialized equipment. We ensure seamless loading, hauling, and tipping operations for key mining and construction projects across Southern African corridors.",
       bullets: [
@@ -25,8 +25,8 @@ export default function ServiceShowcase() {
       id: "bagged-cargo",
       title: "Bagged Cargo Transport",
       tagline: "Secure, Weather-Protected Flat-Deck Solutions",
-      image: "/images/dfs-bagged-cargo-flatdeck.png",
-      alt: "DFS Group flat-deck link combinations carrying palletized bags under covers.",
+      image: "/images/dfs-scania-flatdeck-road.jpg",
+      alt: "DFS Group Scania flat-deck truck on an active SADC corridor road.",
       description:
         "Our flat-deck combination fleets are designed for long-haul stability and safety. We specialize in transporting bagged cement, agricultural materials, and industrial goods with professional lashings and weather covers.",
       bullets: [

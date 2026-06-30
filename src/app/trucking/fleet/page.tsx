@@ -8,17 +8,17 @@ import { PortalStatusBadge } from '@/components/portals/PortalStatusBadge';
 import { X } from 'lucide-react';
 
 const fleetGallery = [
-  { src: '/images/dfs-fleet-scania-volvo-depot.png', caption: 'Scania & Volvo units at the DFS Group depot' },
-  { src: '/images/dfs-scania-flatdeck-road.png', caption: 'DFS Scania on active SADC corridor run' },
-  { src: '/images/dfs-fleet-side-tipper-lineup.png', caption: 'Side-tipper fleet with Scania & Volvo units' },
-  { src: '/images/dfs-fleet-branding-event.png', caption: 'DFS Group fleet at a regional launch event' },
-  { src: '/images/dfs-scania-flatdeck-open.png', caption: 'Scania DFS08 with flat-deck trailer' },
-  { src: '/images/dfs-scania-sunset-depot.png', caption: 'DFS Scania fleet at dusk — full operational readiness' },
-  { src: '/images/dfs-scania-lineup-blue-sky.png', caption: 'DFS Scania lineup under clear Botswana skies' },
-  { src: '/images/dfs-volvo-fh-pair.png', caption: 'Volvo FH 440 units — NORS delivered fleet' },
-  { src: '/images/dfs-fleet-five-scania-rain.png', caption: 'DFS fleet of 5 Scania units in the field' },
-  { src: '/images/dfs-fleet-scania-overcast.png', caption: 'DFS Scania units ready for dispatch' },
-  { src: '/images/dfs-volvo-depot-hangar.png', caption: 'Volvo FH DFS01 & DFS02 at depot hangar' },
+  { src: '/images/dfs-fleet-scania-volvo-depot.jpg', caption: 'Scania & Volvo units at the DFS Group depot' },
+  { src: '/images/dfs-scania-flatdeck-road.jpg', caption: 'DFS Scania on active SADC corridor run' },
+  { src: '/images/dfs-fleet-side-tipper-lineup.jpg', caption: 'Side-tipper fleet with Scania & Volvo units' },
+  { src: '/images/dfs-fleet-branding-event.jpg', caption: 'DFS Group fleet at a regional launch event' },
+  { src: '/images/dfs-scania-flatdeck-open.jpg', caption: 'Scania DFS08 with flat-deck trailer' },
+  { src: '/images/dfs-scania-sunset-depot.jpg', caption: 'DFS Scania fleet at dusk — full operational readiness' },
+  { src: '/images/dfs-scania-lineup-blue-sky.jpg', caption: 'DFS Scania lineup under clear Botswana skies' },
+  { src: '/images/dfs-volvo-fh-pair.jpg', caption: 'Volvo FH 440 units — NORS delivered fleet' },
+  { src: '/images/dfs-fleet-five-scania-rain.jpg', caption: 'DFS fleet of 5 Scania units in the field' },
+  { src: '/images/dfs-fleet-scania-overcast.jpg', caption: 'DFS Scania units ready for dispatch' },
+  { src: '/images/dfs-volvo-depot-hangar.jpg', caption: 'Volvo FH DFS01 & DFS02 at depot hangar' },
 ];
 
 export default function TruckingFleetPortal() {

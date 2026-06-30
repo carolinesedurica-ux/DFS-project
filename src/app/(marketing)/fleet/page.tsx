@@ -50,17 +50,17 @@ export default function Fleet() {
   };
 
   const vehicleImages = [
-    '/images/dfs-fleet-scania-volvo-depot.png',
-    '/images/dfs-scania-flatdeck-road.png',
-    '/images/dfs-fleet-side-tipper-lineup.png',
-    '/images/dfs-fleet-branding-event.png',
-    '/images/dfs-scania-flatdeck-open.png',
-    '/images/dfs-scania-sunset-depot.png',
-    '/images/dfs-scania-lineup-blue-sky.png',
-    '/images/dfs-volvo-fh-pair.png',
-    '/images/dfs-fleet-five-scania-rain.png',
-    '/images/dfs-fleet-scania-overcast.png',
-    '/images/dfs-volvo-depot-hangar.png',
+    '/images/dfs-fleet-scania-volvo-depot.jpg',
+    '/images/dfs-scania-flatdeck-road.jpg',
+    '/images/dfs-fleet-side-tipper-lineup.jpg',
+    '/images/dfs-fleet-branding-event.jpg',
+    '/images/dfs-scania-flatdeck-open.jpg',
+    '/images/dfs-scania-sunset-depot.jpg',
+    '/images/dfs-scania-lineup-blue-sky.jpg',
+    '/images/dfs-volvo-fh-pair.jpg',
+    '/images/dfs-fleet-five-scania-rain.jpg',
+    '/images/dfs-fleet-scania-overcast.jpg',
+    '/images/dfs-volvo-depot-hangar.jpg',
   ];
 
   const getVehicleImage = (trailerType: string, idx: number) => {

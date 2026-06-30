@@ -6,13 +6,21 @@ export default function Hero() {
   return (
     <section className="relative bg-primary-deep text-white overflow-hidden min-h-[580px] sm:min-h-[660px] lg:min-h-[760px] flex items-center pt-20 pb-28 sm:pb-36 border-b border-accent-gold/20">
       
-      {/* Background visual - Styled with premium overlay grids */}
-      <div className="absolute inset-0 bg-primary-black pointer-events-none">
-        {/* Subtle grid mesh */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-        {/* Deep purple radial glow */}
-        <div className="absolute top-1/2 left-1/3 -translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary-royal/10 blur-[130px] rounded-full"></div>
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-gold/5 blur-[120px] rounded-full"></div>
+      {/* Background — real fleet photo with dark overlay */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Image
+          src="/images/dfs-scania-sunset-depot.jpg"
+          alt="DFS Group fleet at Southern Africa depot"
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-25"
+          priority
+        />
+        {/* Deep overlay for legibility */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-black via-primary-deep/90 to-primary-black/80" />
+        {/* Radial gold glow */}
+        <div className="absolute top-1/2 left-1/3 -translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary-royal/10 blur-[130px] rounded-full" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-gold/5 blur-[120px] rounded-full" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -29,7 +37,7 @@ export default function Hero() {
                 <div className="absolute inset-0 rounded-2xl bg-white/5" />
                 <div className="relative h-14 w-48">
                   <Image
-                    src="/images/logos/dfsgrouplogo.jpeg"
+                    src="/images/logos/dfsgrouplogo.png"
                     alt="DFS Group"
                     fill
                     sizes="192px"

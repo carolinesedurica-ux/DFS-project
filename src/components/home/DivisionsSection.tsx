@@ -103,11 +103,12 @@ const divisions = [
     tagline: "Bulk & Bagged Freight Across Southern Africa",
     description:
       "High-capacity road freight specialists operating Volvo FH and Scania side-tippers and flat-decks on SADC corridors. Bulk minerals, bagged cargo and cross-border haulage.",
-    logo: "/images/logos/dfstruckinglogo.jpeg",
+    logo: "/images/logos/dfstruckinglogo.png",
+    photo: "/images/dfs-fleet-branding-event.jpg",
+    photoAlt: "DFS Trucking fleet lineup at SADC event",
     href: "/trucking",
     bgFrom: "from-[#3b1063]",
     bgTo: "to-[#1a0830]",
-    Illustration: TruckIllustration,
     features: ["Bulk Minerals", "Bagged Cargo", "Side Tippers", "Flat Decks", "Cross-Border"],
     cta: "Explore DFS Trucking",
   },
@@ -116,11 +117,12 @@ const divisions = [
     tagline: "Customs Clearing & Compliance Experts",
     description:
       "Professional customs clearing agents operating at all major SADC border posts. HS code classification, duty optimisation, SARS compliance and digital documentation management.",
-    logo: "/images/logos/dfsclearinglogo.jpeg",
+    logo: "/images/logos/dfsclearinglogo.png",
+    photo: "/images/dfs-volvo-fh-pair.jpg",
+    photoAlt: "DFS Volvo FH fleet units ready for cross-border clearance",
     href: "/clearing",
     bgFrom: "from-[#2a1a00]",
     bgTo: "to-[#1a1200]",
-    Illustration: ClearingIllustration,
     features: ["HS Classification", "Duty Assessment", "Border Compliance", "Pre-Clearance", "Digital Docs"],
     cta: "Explore DFS Clearing",
   },
@@ -129,11 +131,12 @@ const divisions = [
     tagline: "Express Courier & Last-Mile Delivery",
     description:
       "Fast, reliable courier and parcel delivery services across Botswana and the region. Same-day and next-day options for documents, parcels and commercial consignments.",
-    logo: "/images/logos/dfsexpresslogo.jpeg",
+    logo: "/images/logos/dfsexpresslogo.png",
+    photo: "/images/dfs-scania-lineup-blue-sky.jpg",
+    photoAlt: "DFS Scania fleet lineup under clear blue skies",
     href: "/express",
     bgFrom: "from-[#3b1063]",
     bgTo: "to-[#6d0077]",
-    Illustration: ExpressIllustration,
     features: ["Same-Day Delivery", "Next-Day Delivery", "Document Courier", "Parcel Tracking", "Commercial Freight"],
     cta: "Explore DFS Express",
   },
@@ -174,16 +177,18 @@ export default function DivisionsSection() {
                 key={div.name}
                 className="group relative flex flex-col rounded-3xl overflow-hidden border border-gray-100 shadow-[0_8px_40px_rgba(23,6,34,0.06)] hover:shadow-[0_20px_60px_rgba(23,6,34,0.16)] transition-all duration-500 hover:-translate-y-2 bg-white"
               >
-                {/* ── Illustrated banner ── */}
+                {/* ── Real photo banner ── */}
                 <div className={`relative h-52 bg-gradient-to-br ${div.bgFrom} ${div.bgTo} overflow-hidden`}>
-                  {/* Ambient glow */}
-                  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_30%,rgba(220,161,29,0.18)_0%,transparent_65%)]" />
-                  {/* Subtle grid */}
-                  <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:2rem_2rem]" />
-                  {/* SVG illustration */}
-                  <div className="absolute inset-0 flex items-center justify-center p-3">
-                    <Illustration />
-                  </div>
+                  {/* Real photo */}
+                  <Image
+                    src={div.photo}
+                    alt={div.photoAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  {/* Dark overlay so logo is readable */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   {/* Company logo badge — bottom-left */}
                   <div className="absolute bottom-3 left-3 z-20">
                     <div className="bg-white/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-md ring-1 ring-white/40">

@@ -47,11 +47,17 @@ export default function FleetPreview() {
     }
   };
 
-  const getVehicleImage = (trailerType: string) => {
-    if (trailerType.toLowerCase().includes("tipper")) {
-      return "/images/dfs-bulk-cargo-side-tipper.png";
-    }
-    return "/images/dfs-bagged-cargo-flatdeck.png";
+  const realFleetPhotos = [
+    "/images/dfs-fleet-side-tipper-lineup.jpg",
+    "/images/dfs-fleet-scania-volvo-depot.jpg",
+    "/images/dfs-volvo-two-at-depot.jpg",
+    "/images/dfs-scania-flatdeck-open.jpg",
+    "/images/dfs-fleet-five-scania-rain.jpg",
+    "/images/dfs-volvo-side-tipper-action.jpg",
+  ];
+
+  const getVehicleImage = (idx: number) => {
+    return realFleetPhotos[idx % realFleetPhotos.length];
   };
 
   const filteredFleet = getFilteredFleet();
@@ -109,7 +115,7 @@ export default function FleetPreview() {
         {/* Mobile Horizontal Scroll / Desktop Grid Wrapper */}
         <div className="overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-grey/20 lg:overflow-visible">
           <div className="flex space-x-6 min-w-[300px] md:min-w-0 lg:grid lg:grid-cols-3 lg:space-x-0 lg:gap-8">
-            {filteredFleet.map((item: FleetItem) => (
+            {filteredFleet.map((item: FleetItem, idx: number) => (
               <div
                 key={item.id}
                 className="w-[290px] sm:w-[340px] lg:w-auto flex-shrink-0 bg-white border border-border-dfs rounded-2xl p-5 flex flex-col justify-between hover:shadow-lg transition-shadow bg-white flex-shrink-0"
@@ -118,11 +124,11 @@ export default function FleetPreview() {
                   {/* Vehicle Image */}
                   <div className="relative h-40 rounded-xl overflow-hidden bg-primary-light">
                     <Image
-                      src={getVehicleImage(item.trailerType)}
+                      src={getVehicleImage(idx)}
                       alt={`${item.unitName} - ${item.trailerType}`}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-2 right-2 bg-primary-deep/90 border border-accent-gold/40 text-accent-gold text-[10px] px-2.5 py-1 rounded-lg font-bold font-mono">
                       Qty: {item.quantity} Units
@@ -186,11 +192,11 @@ export default function FleetPreview() {
         {/* Featured Fleet Banner Graphic */}
         <div className="mt-12 relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-96 shadow-xl group border border-border-dfs">
           <Image
-            src="/images/dfs-fleet-lineup.jpg"
-            alt="DFS Group Volvo and Scania regional logistics fleet parked in Gaborone."
+            src="/images/dfs-fleet-branding-event.jpg"
+            alt="DFS Group Scania and Volvo SADC corridor fleet at a regional event."
             fill
             sizes="100vw"
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-700"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/90 via-primary-deep/40 to-transparent z-10"></div>

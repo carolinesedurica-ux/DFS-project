@@ -58,7 +58,7 @@ export default function TruckingPage() {
       {/* HERO */}
       <section className="relative min-h-[75vh] flex items-end bg-[#1a0830]">
         <Image
-          src="/images/dfs-fleet-side-tipper-lineup.png"
+          src="/images/dfs-fleet-side-tipper-lineup.jpg"
           alt="DFS Trucking fleet — Scania and Volvo side-tipper units on a SADC corridor."
           fill
           sizes="100vw"
@@ -82,7 +82,7 @@ export default function TruckingPage() {
             <div className="inline-flex items-center bg-white/95 backdrop-blur-md rounded-2xl px-5 py-3 animate-logo-glow ring-1 ring-white/50">
               <div className="relative h-14 w-48">
                 <Image
-                  src="/images/logos/dfstruckinglogo.jpeg"
+                  src="/images/logos/dfstruckinglogo.png"
                   alt="DFS Trucking"
                   fill
                   sizes="192px"
@@ -190,7 +190,7 @@ export default function TruckingPage() {
           {/* Hero fleet image */}
           <div className="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden mb-6 shadow-lg">
             <Image
-              src="/images/dfs-fleet-branding-event.png"
+              src="/images/dfs-fleet-branding-event.jpg"
               alt="DFS Group fleet lineup at a SADC regional event"
               fill
               sizes="100vw"
@@ -207,14 +207,14 @@ export default function TruckingPage() {
           {/* Photo grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
             {[
-              { src: '/images/dfs-fleet-scania-volvo-depot.png', label: 'Scania + Volvo Depot' },
-              { src: '/images/dfs-scania-flatdeck-road.png', label: 'Flat-Deck on Corridor' },
-              { src: '/images/dfs-volvo-fh-pair.png', label: 'Volvo FH 440 Units' },
-              { src: '/images/dfs-scania-lineup-blue-sky.png', label: 'Scania Lineup' },
-              { src: '/images/dfs-scania-sunset-depot.png', label: 'Fleet at Dusk' },
-              { src: '/images/dfs-fleet-five-scania-rain.png', label: '5 Units in Field' },
-              { src: '/images/dfs-scania-flatdeck-open.png', label: 'Flat-Deck Link' },
-              { src: '/images/dfs-volvo-depot-hangar.png', label: 'Volvo at Depot' },
+              { src: '/images/dfs-fleet-scania-volvo-depot.jpg', label: 'Scania + Volvo Depot' },
+              { src: '/images/dfs-scania-flatdeck-road.jpg', label: 'Flat-Deck on Corridor' },
+              { src: '/images/dfs-volvo-fh-pair.jpg', label: 'Volvo FH 440 Units' },
+              { src: '/images/dfs-scania-lineup-blue-sky.jpg', label: 'Scania Lineup' },
+              { src: '/images/dfs-scania-sunset-depot.jpg', label: 'Fleet at Dusk' },
+              { src: '/images/dfs-fleet-five-scania-rain.jpg', label: '5 Units in Field' },
+              { src: '/images/dfs-scania-flatdeck-open.jpg', label: 'Flat-Deck Link' },
+              { src: '/images/dfs-volvo-depot-hangar.jpg', label: 'Volvo at Depot' },
             ].map((img) => (
               <div key={img.src} className="relative rounded-xl overflow-hidden aspect-square shadow-sm group">
                 <Image
@@ -249,7 +249,7 @@ export default function TruckingPage() {
         <div className="relative z-10 max-w-2xl mx-auto px-4 space-y-6">
           <div className="inline-flex items-center bg-white/95 rounded-2xl px-5 py-3 shadow-lg ring-1 ring-white/30 mx-auto">
             <div className="relative h-12 w-40">
-              <Image src="/images/logos/dfstruckinglogo.jpeg" alt="DFS Trucking" fill sizes="160px" className="object-contain" />
+              <Image src="/images/logos/dfstruckinglogo.png" alt="DFS Trucking" fill sizes="160px" className="object-contain" />
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display">
