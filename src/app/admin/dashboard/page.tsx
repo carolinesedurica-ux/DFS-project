@@ -103,7 +103,7 @@ export default function AdminDashboardPage() {
       {/* Title Header */}
       <div>
         <h2 className="text-3xl font-black text-white tracking-tight flex items-center space-x-3">
-          <Activity className="h-8 w-8 text-yellow-500 animate-pulse" />
+          <Activity className="h-8 w-8 text-accent-gold animate-pulse" />
           <span>DFS Operations Control Tower</span>
         </h2>
         <p className="text-gray-400 mt-2 font-medium">
@@ -146,13 +146,13 @@ export default function AdminDashboardPage() {
         <div className="lg:col-span-8 space-y-8">
           
           {/* Pending Access Requests */}
-          <div className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden shadow-xl">
-            <div className="p-6 border-b border-gray-800 bg-gray-900/50 flex justify-between items-center">
+          <div className="bg-primary-deep border border-accent-gold/20 rounded-2xl overflow-hidden shadow-xl">
+            <div className="p-6 border-b border-accent-gold/20 bg-primary-deep/50 flex justify-between items-center">
               <div className="flex items-center space-x-3">
-                <Users className="h-5 w-5 text-yellow-500" />
+                <Users className="h-5 w-5 text-accent-gold" />
                 <h3 className="font-bold text-lg text-white">Pending Portal Access Requests</h3>
               </div>
-              <span className="px-2.5 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-bold">
+              <span className="px-2.5 py-1 rounded-full bg-accent-gold/10 text-accent-gold text-xs font-bold">
                 {accessRequests.length} Pending
               </span>
             </div>
@@ -165,7 +165,7 @@ export default function AdminDashboardPage() {
                       <div className="flex items-center space-x-2">
                         <span className="font-bold text-white text-base">{req.fullName}</span>
                         <span className="text-xs text-gray-500">•</span>
-                        <span className="text-sm font-semibold text-yellow-500">{req.companyName}</span>
+                        <span className="text-sm font-semibold text-accent-gold">{req.companyName}</span>
                       </div>
                       <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 font-medium">
                         <span>Position: {req.position}</span>
@@ -202,13 +202,13 @@ export default function AdminDashboardPage() {
           </div>
 
           {/* Vehicle Load Compliance */}
-          <div className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden shadow-xl">
-            <div className="p-6 border-b border-gray-800 bg-gray-900/50 flex justify-between items-center">
+          <div className="bg-primary-deep border border-accent-gold/20 rounded-2xl overflow-hidden shadow-xl">
+            <div className="p-6 border-b border-accent-gold/20 bg-primary-deep/50 flex justify-between items-center">
               <div className="flex items-center space-x-3">
-                <Truck className="h-5 w-5 text-yellow-500" />
+                <Truck className="h-5 w-5 text-accent-gold" />
                 <h3 className="font-bold text-lg text-white">Vehicle Axle Monitors (GPS Telemetry)</h3>
               </div>
-              <Link href="/admin/tracking" className="text-xs text-yellow-500 hover:text-yellow-400 font-bold flex items-center space-x-1">
+              <Link href="/admin/tracking" className="text-xs text-accent-gold hover:text-accent-bright font-bold flex items-center space-x-1">
                 <span>View Full Map</span>
                 <ArrowRight className="h-3 w-3" />
               </Link>
@@ -245,10 +245,10 @@ export default function AdminDashboardPage() {
         <div className="lg:col-span-4 space-y-8">
           
           {/* Border Queue Status */}
-          <div className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden shadow-xl">
-            <div className="p-6 border-b border-gray-800 bg-gray-900/50 flex justify-between items-center">
+          <div className="bg-primary-deep border border-accent-gold/20 rounded-2xl overflow-hidden shadow-xl">
+            <div className="p-6 border-b border-accent-gold/20 bg-primary-deep/50 flex justify-between items-center">
               <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-yellow-500" />
+                <Clock className="h-5 w-5 text-accent-gold" />
                 <h3 className="font-bold text-lg text-white">SADC Border Queues</h3>
               </div>
             </div>
