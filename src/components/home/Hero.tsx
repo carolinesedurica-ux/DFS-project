@@ -35,12 +35,12 @@ export default function Hero() {
               <div className="relative flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-3 animate-logo-glow ring-1 ring-accent-gold/10">
                 {/* Glow behind logo */}
                 <div className="absolute inset-0 rounded-2xl bg-white/5" />
-                <div className="relative h-14 w-48">
+                <div className="relative h-20 w-64">
                   <Image
                     src="/images/logos/dfsgrouplogo.png"
                     alt="DFS Group"
                     fill
-                    sizes="192px"
+                    sizes="256px"
                     className="object-contain object-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
                     priority
                   />

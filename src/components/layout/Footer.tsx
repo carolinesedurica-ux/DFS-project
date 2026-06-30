@@ -18,14 +18,13 @@ export default function Footer() {
     <footer className="bg-primary-black text-white/70 border-t-2 border-accent-gold mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="relative h-10 w-36">
+            <div className="relative h-14 w-48">
               <Image
                 src="/images/logos/dfsgrouplogo.png"
                 alt="DFS Group"
                 fill
-                sizes="144px"
+                sizes="192px"
                 className="object-contain object-left brightness-0 invert"
               />
             </div>

@@ -247,9 +247,9 @@ export default function TruckingPage() {
       <section className="py-20 bg-primary-deep text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(220,161,29,0.06)_0%,transparent_70%)]" />
         <div className="relative z-10 max-w-2xl mx-auto px-4 space-y-6">
-          <div className="inline-flex items-center bg-white/95 rounded-2xl px-5 py-3 shadow-lg ring-1 ring-white/30 mx-auto">
-            <div className="relative h-12 w-40">
-              <Image src="/images/logos/dfstruckinglogo.png" alt="DFS Trucking" fill sizes="160px" className="object-contain" />
+          <div className="inline-flex items-center bg-white/95 rounded-2xl px-6 py-4 shadow-lg ring-1 ring-white/30 mx-auto">
+            <div className="relative h-16 w-52">
+              <Image src="/images/logos/dfstruckinglogo.png" alt="DFS Trucking" fill sizes="208px" className="object-contain" />
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display">

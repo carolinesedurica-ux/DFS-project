@@ -55,12 +55,12 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-1 flex-shrink-0">
-            <div className="relative h-14 w-36 sm:h-16 sm:w-44">
+            <div className="relative h-15 w-44 sm:h-18 sm:w-56">
               <Image
                 src="/images/logos/dfsgrouplogo.png"
                 alt="DFS Group Logo"
                 fill
-                sizes="(max-width: 640px) 144px, 176px"
+                sizes="(max-width: 640px) 176px, 224px"
                 className="object-contain object-left"
                 priority
               />

@@ -28,16 +28,16 @@ export default function ProtectedRoute({
     if (authState === "idle" || authState === "loading") return;
 
     if (!isAuthenticated || !user) {
-      router.replace("/portal/sign-in");
+      router.replace(requireAdmin ? "/admin/login" : "/portal/sign-in");
       return;
     }
 
     if (requireAdmin && !canAccessAdmin(user.role)) {
-      router.replace("/portal/dashboard");
+      router.replace("/admin/login");
       return;
     }
 
-    if (!requireAdmin && !canAccessPortal(user.role) && !canAccessAdmin(user.role)) {
+    if (!requireAdmin && !canAccessPortal(user.role)) {
       router.replace("/portal/sign-in");
       return;
     }

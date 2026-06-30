@@ -15,7 +15,7 @@ export default function PortalSignIn() {
   const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { login } = useAuth();
+  const { login, logout } = useAuth();
   const router = useRouter();
 
   const errorMessages: Record<string, string> = {
@@ -34,9 +34,11 @@ export default function PortalSignIn() {
     const result: LoginResult = await login(email, password);
 
     if (result.success) {
-      // Route based on role
+      // Only allow customer role on customer portal
       if (canAccessAdmin(result.user.role)) {
-        router.push("/admin/trucking");
+        logout();
+        setError("DFS Administrators and Operations staff must log in via the Admin Portal.");
+        setIsLoading(false);
       } else {
         router.push("/trucking/dashboard");
       }
@@ -237,18 +239,18 @@ export default function PortalSignIn() {
           {/* Demo Credentials Hint (Phase One Only) */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800 space-y-2">
             <span className="font-bold uppercase block text-[10px] tracking-wider">
-              Phase One Demo Accounts
+              Customer Demo Account
             </span>
             <div className="space-y-1 font-mono text-[11px]">
               <p>
-                <strong>Customer:</strong> customer@demo.dfs.group / Demo2026!
+                <strong>Email:</strong> customer@demo.dfs.group
               </p>
               <p>
-                <strong>Admin:</strong> admin@demo.dfs.group / Admin2026!
+                <strong>Password:</strong> Demo2026!
               </p>
-              <p>
-                <strong>Operations:</strong> ops@demo.dfs.group / Ops2026!
-              </p>
+            </div>
+            <div className="pt-2 border-t border-amber-200 text-[10px]">
+              Need to manage operations? <Link href="/admin/login" className="font-bold underline hover:text-amber-900">Go to Admin Portal Login</Link>
             </div>
           </div>
 

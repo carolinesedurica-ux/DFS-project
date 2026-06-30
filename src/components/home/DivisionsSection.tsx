@@ -171,7 +171,6 @@ export default function DivisionsSection() {
         {/* Division Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {divisions.map((div) => {
-            const { Illustration } = div;
             return (
               <div
                 key={div.name}
@@ -189,15 +188,14 @@ export default function DivisionsSection() {
                   />
                   {/* Dark overlay so logo is readable */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  {/* Company logo badge — bottom-left */}
                   <div className="absolute bottom-3 left-3 z-20">
-                    <div className="bg-white/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-md ring-1 ring-white/40">
-                      <div className="relative h-8 w-28">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-md ring-1 ring-white/40">
+                      <div className="relative h-12 w-40">
                         <Image
                           src={div.logo}
                           alt={`${div.name} logo`}
                           fill
-                          sizes="112px"
+                          sizes="160px"
                           className="object-contain object-left"
                         />
                       </div>
