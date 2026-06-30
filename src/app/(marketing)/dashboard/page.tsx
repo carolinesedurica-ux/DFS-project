@@ -12,7 +12,10 @@ import {
     User,
     LayoutDashboard,
     ArrowUpRight,
+    LogOut
 } from "lucide-react";
+import ProtectedRoute from "@/lib/auth/ProtectedRoute";
+import { useAuth } from "@/lib/auth/AuthContext";
 
 const menuItems = [
     { title: "Dashboard", icon: LayoutDashboard },
@@ -52,12 +55,15 @@ const stats = [
 ];
 
 export default function DashboardPage() {
+    const { user, logout } = useAuth();
+
     return (
-        <div className="min-h-screen bg-[#1A102E] text-white flex">
+        <ProtectedRoute>
+            <div className="min-h-screen bg-[#1A102E] text-white flex">
 
-            {/* ================= Sidebar ================= */}
+                {/* ================= Sidebar ================= */}
 
-            <aside className="w-72 border-r border-[#D4AF37]/20 bg-[#1A102E]">
+                <aside className="w-72 border-r border-[#D4AF37]/20 bg-[#1A102E] flex flex-col justify-between">
 
                 <div className="px-8 py-8 border-b border-[#D4AF37]/20">
 
@@ -113,6 +119,14 @@ export default function DashboardPage() {
 
                     </div>
 
+                    <button
+                        onClick={logout}
+                        className="w-full flex items-center justify-center gap-3 mt-4 rounded-xl px-4 py-3 bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white transition font-semibold"
+                    >
+                        <LogOut size={20} />
+                        <span>Log Out</span>
+                    </button>
+
                 </div>
 
             </aside>
@@ -159,11 +173,11 @@ export default function DashboardPage() {
                             <div>
 
                                 <p className="font-semibold">
-                                    Administrator
+                                    {user?.name || "Client Partner"}
                                 </p>
 
                                 <p className="text-xs text-white/50">
-                                    DFS Group
+                                    {user?.companyName || "DFS Group"}
                                 </p>
 
                             </div>
@@ -601,5 +615,6 @@ export default function DashboardPage() {
             </main>
 
         </div>
+        </ProtectedRoute>
     );
 }

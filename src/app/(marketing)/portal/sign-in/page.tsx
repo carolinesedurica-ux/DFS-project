@@ -38,7 +38,7 @@ export default function PortalSignIn() {
       if (canAccessAdmin(result.user.role)) {
         router.push("/admin/dashboard");
       } else {
-        router.push("/portal/dashboard");
+        router.push("/dashboard");
       }
     } else {
       setError(errorMessages[result.error] || "An unexpected error occurred.");

@@ -33,7 +33,7 @@ export default function ProtectedRoute({
     }
 
     if (requireAdmin && !canAccessAdmin(user.role)) {
-      router.replace("/portal/dashboard");
+      router.replace("/dashboard");
       return;
     }
 
