@@ -3,7 +3,7 @@
 import PortalSidebar from "@/components/portals/PortalSidebar";
 import PortalHeader from "@/components/portals/PortalHeader";
 import ProtectedRoute from "@/lib/auth/ProtectedRoute";
-import { Truck, Map, Box, FileText, Headset, LayoutDashboard } from "lucide-react";
+import { Truck, Map, Box, FileText, Headset, LayoutDashboard, Coins } from "lucide-react";
 
 const truckingNavItems = [
   { name: "Dashboard", href: "/trucking/dashboard", icon: LayoutDashboard },
@@ -11,6 +11,7 @@ const truckingNavItems = [
   { name: "Tracking", href: "/trucking/tracking", icon: Map },
   { name: "Shipments", href: "/trucking/shipments", icon: Box },
   { name: "Quotes", href: "/trucking/quotes", icon: FileText },
+  { name: "Finance", href: "/trucking/finance", icon: Coins },
   { name: "Support", href: "/trucking/support", icon: Headset },
 ];
 

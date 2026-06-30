@@ -1,19 +1,21 @@
 "use client";
-
+ 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Truck, Globe, Package, Map, BarChart, Users, Building, Settings, User, LogOut } from 'lucide-react';
+import { LayoutDashboard, Truck, Globe, Package, Map, BarChart, Users, Building, Settings, User, LogOut, Coins, Database } from 'lucide-react';
 import ProtectedRoute from '@/lib/auth/ProtectedRoute';
 import { useAuth } from '@/lib/auth/AuthContext';
-
+ 
 const adminNavItems = [
   { name: "Trucking", href: "/admin/trucking", icon: Truck },
   { name: "Clearing", href: "/admin/clearing", icon: Globe },
   { name: "Express", href: "/admin/express", icon: Package },
   { name: "Global Tracking", href: "/admin/tracking", icon: Map },
   { name: "Analytics", href: "/admin/analytics", icon: BarChart },
+  { name: "Finance", href: "/admin/finance", icon: Coins },
   { name: "Users", href: "/admin/users", icon: Users },
   { name: "Companies", href: "/admin/companies", icon: Building },
+  { name: "Knowledge Base", href: "/admin/knowledge", icon: Database },
   { name: "Settings", href: "/admin/settings", icon: Settings },
 ];
 

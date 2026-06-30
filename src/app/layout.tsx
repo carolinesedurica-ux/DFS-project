@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth/AuthContext";
+import { ChatWidget } from "@/components/ai/ChatWidget";
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +55,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans antialiased bg-white text-charcoal">
         <AuthProvider>
           {children}
+          <ChatWidget />
         </AuthProvider>
       </body>
     </html>
