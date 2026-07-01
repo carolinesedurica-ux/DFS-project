@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full scroll-smooth">
+    <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans antialiased bg-white text-charcoal">
         <AuthProvider>
           {children}
