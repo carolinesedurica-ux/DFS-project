@@ -189,13 +189,13 @@ export default function DivisionsSection() {
                   {/* Dark overlay so logo is readable */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute bottom-3 left-3 z-20">
-                    <div className="bg-white/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-md ring-1 ring-white/40">
-                      <div className="relative h-12 w-40">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-xl px-4 py-2.5 shadow-md ring-1 ring-white/40">
+                      <div className="relative h-14 w-48">
                         <Image
                           src={div.logo}
                           alt={`${div.name} logo`}
                           fill
-                          sizes="160px"
+                          sizes="192px"
                           className="object-contain object-left"
                         />
                       </div>

@@ -10,7 +10,7 @@ import { mockTruckingShipments } from '@/lib/mockData';
 import { Truck, MapPin, AlertCircle, Clock, Zap, Radio, Bell, ArrowRight, Activity, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 
-/* ── Fake live telemetry logs ─────────────────────────────────── */
+/* -- Fake live telemetry logs ---------------------------------- */
 const telemetryLogs = [
   { truck: 'BOT-FT-412', log: 'Axle load nominal — 24h avg', time: '02:14' },
   { truck: 'BOT-FT-415', log: 'Speed alert cleared — now compliant', time: '04:32' },
