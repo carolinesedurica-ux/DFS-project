@@ -196,7 +196,7 @@ export default function CustomerPortalDashboard() {
               <Truck className="h-5 w-5 text-accent-gold" />
               <span>Your Active Corridor Shipments</span>
             </h3>
-            <Link href="/portal/shipments" className="text-xs text-accent-gold font-bold flex items-center space-x-1 hover:text-accent-bright">
+            <Link href="/portal/trucking" className="text-xs text-accent-gold font-bold flex items-center space-x-1 hover:text-accent-bright">
               <span>All Shipments</span>
               <ArrowRight className="h-3 w-3" />
             </Link>

@@ -2,15 +2,18 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Truck, FileText, ClipboardList, MessageSquare, ShieldAlert, LogOut, User } from 'lucide-react';
+import { LayoutDashboard, Truck, Globe, Package, Map, FileText, ClipboardList, MessageSquare, ShieldAlert, LogOut, User } from 'lucide-react';
 import ProtectedRoute from '@/lib/auth/ProtectedRoute';
 import { useAuth } from '@/lib/auth/AuthContext';
 
 const portalNavItems = [
-  { name: "Dashboard", href: "/portal/dashboard", icon: LayoutDashboard },
-  { name: "My Shipments", href: "/portal/shipments", icon: Truck },
-  { name: "Document Vault", href: "/portal/documents", icon: FileText },
-  { name: "My Quotes", href: "/portal/quotes", icon: ClipboardList },
+  { name: "Overview", href: "/portal/dashboard", icon: LayoutDashboard },
+  { name: "Trucking", href: "/portal/trucking", icon: Truck },
+  { name: "Clearing", href: "/portal/clearing", icon: Globe },
+  { name: "Express", href: "/portal/express", icon: Package },
+  { name: "Fleet Tracking", href: "/portal/tracking", icon: Map },
+  { name: "Documents", href: "/portal/documents", icon: FileText },
+  { name: "Quotes", href: "/portal/quotes", icon: ClipboardList },
   { name: "Messages", href: "/portal/messages", icon: MessageSquare },
   { name: "Help Desk", href: "/portal/support", icon: ShieldAlert },
 ];
@@ -56,19 +59,6 @@ export default function PortalLayout({
             })}
           </nav>
 
-          {/* Division Links */}
-          <div className="px-4 py-3 border-t border-accent-gold/10 bg-primary-deep/30 space-y-1">
-            <span className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest px-2 mb-1">Services</span>
-            <Link href="/trucking/dashboard" className="block text-xs font-semibold text-gray-400 hover:text-accent-bright py-1 px-2 hover:bg-white/5 rounded transition-all">
-              🚚 DFS Trucking
-            </Link>
-            <Link href="/express/dashboard" className="block text-xs font-semibold text-gray-400 hover:text-accent-bright py-1 px-2 hover:bg-white/5 rounded transition-all">
-              📦 DFS Express
-            </Link>
-            <Link href="/clearing/dashboard" className="block text-xs font-semibold text-gray-400 hover:text-accent-bright py-1 px-2 hover:bg-white/5 rounded transition-all">
-              🌐 DFS Customs Clearing
-            </Link>
-          </div>
 
           <div className="p-4 border-t border-accent-gold/20 bg-primary-deep/50">
             <button
